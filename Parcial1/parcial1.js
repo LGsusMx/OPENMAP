@@ -27,7 +27,7 @@ MapView.on('dblclick', function(e){
     if (Global.length > 10) {
         ClearMapRes();
         document.getElementById("Mapviewres").style.display = "block";
-        var nums = Math.floor(Math.random() * 3);
+        var nums = Math.floor(Math.random() * 4);
         console.log(nums);
         ChangeMap(nums);
         var Polygon = L.polygon([Global]).addTo(MapView);

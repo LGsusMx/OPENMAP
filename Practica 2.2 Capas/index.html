@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Practica 2.1</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+    </head>
+    <body>
+        <label for="Tiles">Choose a Tile:</label>
+        <select name="Tile" id="Tile" onchange="ChangeMap(this.value);">
+          <option value="0">Primer Tile</option>
+          <option value="1">Segundo Tile</option>
+          <option value="2">Tercer Tile</option>
+          <option value="3">Cuarto Tile</option>
+          <option value="4">Quinto Tile</option>
+        </select> 
+        <button id="btnBorrar" class="btn btn-primary">Borrar mapa</button>
+        <div id="Mapview" style="height: 800px;">
+        </div>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="index.js"></script>
+    </body>
+</html>
